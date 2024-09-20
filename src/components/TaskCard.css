@@ -1,0 +1,39 @@
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(210, 209, 209);
+  min-height: 6rem;
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.task-datail {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the images */
+  align-items: center; /* Vertically aligns the images */
+  gap: 10px;
+}
+
+.icon-container img {
+  cursor: pointer;
+}
+
+.delete-icon,
+.edit-icon {
+  transition: all 0.3s ease-in;
+}
+
+.delete-icon:hover {
+  filter: drop-shadow(0 0 5px red);
+}
+
+.edit-icon:hover {
+  filter: drop-shadow(0 0 5px dodgerblue);
+}

@@ -1,0 +1,22 @@
+.tag {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: rgb(235, 235, 235);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  max-height: 0;
+  opacity: 0;
+  display: none;
+}
+
+@media screen and (min-width: 880px) {
+  .tag {
+    max-height: 100vh;
+    opacity: 1;
+    display: initial;
+  }
+}

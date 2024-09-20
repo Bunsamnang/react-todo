@@ -1,0 +1,50 @@
+.app__header {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.app__header form {
+  width: 40%;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgb(212, 212, 212);
+}
+
+.input::placeholder {
+  opacity: 0.8;
+}
+
+.app__header__bottom-line {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.task-status,
+.add-task-btn {
+  margin-right: 1rem;
+  padding: 0.8rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.add-task-btn {
+  border: none;
+  background-color: rgb(255, 153, 0);
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.add-task-btn:hover {
+  opacity: 0.8;
+}
