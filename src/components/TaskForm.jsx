@@ -19,10 +19,15 @@ const TaskForm = ({ setTasks }) => {
     //prevent default behavior of form
     e.preventDefault();
 
-    // add taskData obj to tasks array in App component
-    setTasks((prev) => {
-      return [...prev, taskData];
-    });
+    //check if user give sth in the text input
+    if (!taskData.taskName) {
+      return;
+    } else {
+      // add taskData obj to tasks array in App component
+      setTasks((prev) => {
+        return [...prev, taskData];
+      });
+    }
 
     // set everything back to default when submit
     // needs to also give the value as properties in
